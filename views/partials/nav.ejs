@@ -1,0 +1,47 @@
+<nav class="bg-white shadow" x-data="{ showDropdown: false }">
+  <div class="px-10 py-3 mx-auto md:flex">
+    <div class="flex items-center justify-between w-full">
+      <div class="w-56">
+        <a
+          class="text-2xl font-bold text-gray-800 transition-colors duration-200 transform lg:text-3xl hover:text-gray-700"
+          href="#"
+          >Amber Reads</a
+        >
+      </div>
+
+      <div >
+        <a
+          @mouseover="showDropdown = true"
+          @mouseleave="showDropdown = false"
+          class="flex items-center justify-between w-full p-6 text-white bg-black rounded-lg"
+          href="#"
+        >
+          <h2>Login</h2>
+      
+        </a>
+      
+        <div
+          x-show="showDropdown"
+          @mouseover="showDropdown = true"
+          @mouseleave="showDropdown = false"
+          class="pt-4"
+        >
+          <ul class="p-6 text-white bg-black rounded-lg">
+            <li>Student</li>
+            <li>Admin</li>
+          </ul>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+   
+  </div>
+</nav>
+
+
+
+
+
